@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="/webfonts/">
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="radius">
+            <h1 class="text-center font-weight-bold">
+                <i class="fa-solid fa-calendar-check"></i> 
+                TODOLIST
+            </h1>
+            <div class="row justify-content-center">
+                <input class="text-center border border-warning form-control" id="to-do" placeholder="Insert Reminder"
+                    type="text" name="to-do">
+                <select class="text-center border border-warning" id="categories">
+                    <option value="">Generic</option>
+                </select>
+                <button class="btn btn-warning rounded-circle" type="submit" id="add">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div id="task-list" class="text-position">
+                
+            </div>
+        </div>
+        <div id="counters" class="text-center">
+            <span id="task-done"></span>
+            <span class="text"> of </span>
+            <span id="task-counter"></span>
+            <span class="text">task completed</span>
+        </div>
+        <button id="clear-all" class="btn btn-outline-warning d-flex justify-content-center align-items-center">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
